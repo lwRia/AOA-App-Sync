@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues name="AGP (8.5.2)" by="lint 8.5.2" client="gradle" dependencies="false" format="6"
+    type="baseline" variant="all" version="8.5.2">
+
+    <issue errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="17" file="src/main/res/layout/activity_app_update.xml" line="36" />
+    </issue>
+
+    <issue errorLine1="                android:textSize=&quot;20dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="17" file="src/main/res/layout/activity_app_update.xml" line="54" />
+    </issue>
+
+    <issue errorLine1="                android:textSize=&quot;16dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="17" file="src/main/res/layout/activity_app_update.xml" line="62" />
+    </issue>
+
+    <issue errorLine1="                    android:textSize=&quot;16dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="21" file="src/main/res/layout/activity_app_update.xml" line="78" />
+    </issue>
+
+    <issue errorLine1="                    android:textSize=&quot;16dp&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="21" file="src/main/res/layout/activity_app_update.xml" line="93" />
+    </issue>
+
+    <issue errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="17" file="src/main/res/layout/activity_maintenance.xml" line="39" />
+    </issue>
+
+    <issue errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="13" file="src/main/res/layout/activity_maintenance.xml" line="52" />
+    </issue>
+
+    <issue errorLine1="            android:textSize=&quot;14dp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="13" file="src/main/res/layout/activity_maintenance.xml" line="64" />
+    </issue>
+
+    <issue errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location column="13" file="src/main/res/layout/activity_maintenance.xml" line="93" />
+    </issue>
+
+    <issue errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~"
+        id="UseCompoundDrawables" message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location column="10" file="src/main/res/layout/activity_app_update.xml" line="17" />
+    </issue>
+
+    <issue errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~"
+        id="UseCompoundDrawables" message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location column="10" file="src/main/res/layout/activity_maintenance.xml" line="18" />
+    </issue>
+
+    <issue errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~"
+        id="UseCompoundDrawables" message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location column="6" file="src/main/res/layout/activity_maintenance.xml" line="68" />
+    </issue>
+
+    <issue errorLine1="    android:background=&quot;#F1F4F7&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#F1F4F7` with a theme that also paints a background (inferred theme is `@style/Theme_AppCompat_Light_NoActionBar`)">
+        <location column="5" file="src/main/res/layout/activity_app_update.xml" line="5" />
+    </issue>
+
+    <issue id="IconLocation"
+        message="Found bitmap drawable `res/drawable/maintenance_icon.png` in densityless folder">
+        <location file="src/main/res/drawable/maintenance_icon.png" />
+    </issue>
+
+    <issue errorLine1="            &lt;ImageView" errorLine2="             ~~~~~~~~~"
+        id="ContentDescription" message="Missing `contentDescription` attribute on image">
+        <location column="14" file="src/main/res/layout/activity_app_update.xml" line="22" />
+    </issue>
+
+    <issue errorLine1="            &lt;ImageView" errorLine2="             ~~~~~~~~~"
+        id="ContentDescription" message="Missing `contentDescription` attribute on image">
+        <location column="14" file="src/main/res/layout/activity_maintenance.xml" line="24" />
+    </issue>
+
+    <issue errorLine1="        &lt;ImageView" errorLine2="         ~~~~~~~~~"
+        id="ContentDescription" message="Missing `contentDescription` attribute on image">
+        <location column="10" file="src/main/res/layout/activity_maintenance.xml" line="77" />
+    </issue>
+
+    <issue errorLine1="                    android:text=&quot;Update&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~"
+        id="HardcodedText"
+        message="Hardcoded string &quot;Update&quot;, should use `@string` resource">
+        <location column="21" file="src/main/res/layout/activity_app_update.xml" line="89" />
+    </issue>
+
+    <issue errorLine1="                android:text=&quot;App Name&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~"
+        id="HardcodedText"
+        message="Hardcoded string &quot;App Name&quot;, should use `@string` resource">
+        <location column="17" file="src/main/res/layout/activity_maintenance.xml" line="37" />
+    </issue>
+
+    <issue errorLine1="            android:text=&quot;The app is under maintenance&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="HardcodedText"
+        message="Hardcoded string &quot;The app is under maintenance&quot;, should use `@string` resource">
+        <location column="13" file="src/main/res/layout/activity_maintenance.xml" line="50" />
+    </issue>
+
+    <issue errorLine1="            android:text=&quot;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="HardcodedText"
+        message="Hardcoded string &quot;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&quot;, should use `@string` resource">
+        <location column="13" file="src/main/res/layout/activity_maintenance.xml" line="62" />
+    </issue>
+
+    <issue errorLine1="                android:layout_marginLeft=&quot;10dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts">
+        <location column="17" file="src/main/res/layout/activity_app_update.xml" line="32" />
+    </issue>
+
+    <issue errorLine1="                    android:layout_marginRight=&quot;26dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;26dp&quot;` to better support right-to-left layouts">
+        <location column="21" file="src/main/res/layout/activity_app_update.xml" line="74" />
+    </issue>
+
+    <issue errorLine1="                android:layout_marginLeft=&quot;12dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;12dp&quot;` to better support right-to-left layouts">
+        <location column="17" file="src/main/res/layout/activity_maintenance.xml" line="34" />
+    </issue>
+
+    <issue id="RtlEnabled"
+        message="The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest">
+        <location file="src/main/AndroidManifest.xml" />
+    </issue>
+
+</issues>
