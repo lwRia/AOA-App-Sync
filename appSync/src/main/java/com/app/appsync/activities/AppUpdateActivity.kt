@@ -107,7 +107,7 @@ class AppUpdateActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-        callback = object : OnBackPressedCallback(false) {
+        callback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 if (activityClose) {
                     finish()

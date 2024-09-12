@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Xyz</string>
+    <string name="app_name">App Name</string>
     <string name="update_title">app update available</string>
     <string name="update_force_dsc"> An update is available that must be installed.</string>
     <string name="update_dsc">An update is available. Would you like to install it?</string>
     <string name="btn_no_thanks">No, thanks</string>
-    <string name="maintenance">app is under maintenance</string>
     <string name="update">Update</string>
     <string name="error_something_wrong">ERROR : Something went wrong, please verify meta-data in your project\'s manifest!\nFor more info : https://documentation.appsonair.com/Mobile-Quickstart/android-sdk-setup</string>
     <string name="the_app_is_under_maintenance">The app is under maintenance</string>
+    <string name="thank_you_for_patience">Thank you for your patience!</string>
 </resources>
