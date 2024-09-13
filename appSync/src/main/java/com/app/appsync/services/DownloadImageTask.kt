@@ -2,6 +2,7 @@ package com.app.appsync.services
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.view.View
 import android.widget.ImageView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,6 +18,7 @@ class DownloadImageTask(private val bmImage: ImageView) {
             val bitmap = downloadImage(url)
             withContext(Dispatchers.Main) {
                 bmImage.setImageBitmap(bitmap)
+                bmImage.visibility = View.VISIBLE
             }
         }
     }

@@ -40,7 +40,12 @@ class AppsOnAirServices {
                     val updateData = jsonObject.getJSONObject("updateData")
                     val isAndroidUpdate = updateData.getBoolean("isAndroidUpdate")
                     val isMaintenance = jsonObject.getBoolean("isMaintenance")
-                    if (isAndroidUpdate) {
+                    if (isMaintenance && showNativeUI) {
+                        val intent = Intent(context, MaintenanceActivity::class.java)
+                        intent.putExtra("res", myResponse)
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        context.startActivity(intent)
+                    } else if (isAndroidUpdate) {
                         val isAndroidForcedUpdate = updateData.getBoolean("isAndroidForcedUpdate")
                         val androidBuildNumber = updateData.getString("androidBuildNumber")
                         val info = context.packageManager.getPackageInfo(context.packageName, 0)
@@ -58,11 +63,6 @@ class AppsOnAirServices {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                             context.startActivity(intent)
                         }
-                    } else if (isMaintenance && showNativeUI) {
-                        val intent = Intent(context, MaintenanceActivity::class.java)
-                        intent.putExtra("res", myResponse)
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        context.startActivity(intent)
                     }
                     callBack?.onSuccess(myResponse)
                     isResponseReceived = true

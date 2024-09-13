@@ -26,20 +26,12 @@ class AppUpdateActivity : AppCompatActivity() {
             val ai = packageManager.getApplicationInfo(packageName, PackageManager.GET_META_DATA)
             val bundle1 = ai.metaData
             var icon = 0
-            var name: String? = ""
+
+            val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
+            val appName = packageManager.getApplicationLabel(applicationInfo) as String
 
             if (bundle1 != null) {
                 icon = bundle1.getInt("com.appsonair.icon")
-                name = bundle1.getString("com.appsonair.name")
-                if (name === "" || name == null) {
-                    name = "Your"
-                }
-            } else if (name == null || name === "") {
-                name = "Your"
-                icon = resources.getIdentifier(
-                    java.lang.String.valueOf(R.drawable.maintenance_icon), "drawable",
-                    this.packageName
-                )
             }
 
             val bundle = this.intent.extras
@@ -71,10 +63,11 @@ class AppUpdateActivity : AppCompatActivity() {
                     val txtNoThanks = findViewById<TextView>(R.id.txt_no_thanks)
                     val btnUpdate = findViewById<TextView>(R.id.btn_update)
                     if (icon != 0) {
+                        imgIcon.visibility = View.VISIBLE
                         imgIcon.setImageResource(icon)
                     }
                     txtTitle.text = buildString {
-                        append(name)
+                        append(appName)
                         append(" ")
                         append(getString(R.string.update_title))
                     }
@@ -83,7 +76,7 @@ class AppUpdateActivity : AppCompatActivity() {
                         txtDes.text = getString(R.string.update_force_dsc)
                     } else {
                         txtNoThanks.visibility = View.VISIBLE
-                        txtDes.text = getString(R.string.update_dsc)
+                        txtDes.text = getString(R.string.update_dsc, appName)
                         txtNoThanks.setOnClickListener {
                             activityClose = true
                             callback.isEnabled = true

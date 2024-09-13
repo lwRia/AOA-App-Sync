@@ -2,6 +2,7 @@ package com.app.appsync.activities
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -51,6 +52,8 @@ class MaintenanceActivity : AppCompatActivity() {
                     if (image.isNotEmpty()) {
                         DownloadImageTask(imgIcon)
                             .execute(image)
+                    } else {
+                        imgIcon.visibility = View.VISIBLE
                     }
                     if (description.isNotEmpty()) {
                         txtDesMaintain.text = description
