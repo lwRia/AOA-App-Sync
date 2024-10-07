@@ -20,12 +20,12 @@ import okhttp3.Response
 import org.json.JSONObject
 import java.io.IOException
 
-class AppsOnAirServices {
+class AppSyncService {
     companion object {
         private var appId: String = ""
         private var showNativeUI: Boolean = true
         private var isResponseReceived: Boolean = false
-        private const val TAG = "AppsOnAirServices"
+        private const val TAG = "AppSyncService"
 
         private fun getResponse(
             response: Response,

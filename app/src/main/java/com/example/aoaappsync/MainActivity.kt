@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.app.appsync.interfaces.UpdateCallBack
-import com.app.appsync.services.AppsOnAirServices
+import com.app.appsync.services.AppSyncService
 import com.example.aoaappsync.ui.theme.AOAAppSyncTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        AppsOnAirServices.sync(
+        AppSyncService.sync(
             this,
             options = mapOf("showNativeUI" to true),
             callBack = object : UpdateCallBack {
