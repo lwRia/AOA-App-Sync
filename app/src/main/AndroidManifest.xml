@@ -28,7 +28,7 @@
             android:resource="@mipmap/ic_launcher" />
         <meta-data
             android:name="appId"
-            android:value="bf299f68-7fa0-4d2e-a658-f75de4e860f7" />
+            android:value="********-****-****-****-************" />
     </application>
 
 </manifest>
